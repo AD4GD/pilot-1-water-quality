@@ -10,27 +10,27 @@
 
 <https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/generic/entailed/properties.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    dct:hasVersion "git:69c0139130724beebb7d5fcb4b6d3867207e3118" ;
-    prov:wasAttributedTo _:N6ee1a631826d46a1b2b0154147c13a45 ;
+    dct:hasVersion "git:190be21de9696bf3f38a63778c157b81cc3a33a5" ;
+    prov:wasAttributedTo _:N79d9a2ae1cb9497a945b1a689bacda65 ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w ./rainbow-data rainbow-data/catalog.ttl --use-git-status --update --graph-store https://defs-hosted.opengis.net/fuseki-hosted/data" ;
-            prov:endedAtTime "2025-07-22T14:23:41.764705"^^xsd:dateTime ;
-            prov:startedAtTime "2025-07-22T14:23:32.268823"^^xsd:dateTime ;
+            prov:endedAtTime "2025-07-22T14:27:11.622013"^^xsd:dateTime ;
+            prov:startedAtTime "2025-07-22T14:27:04.562251"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    rdfs:seeAlso <http://www.opengis.net/def/metamodel/profiles/skos_shared> ],
-                [ a prov:Entity ;
-                    rdfs:seeAlso <https://datashapes.org/dash.ttl> ],
-                [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:69c0139130724beebb7d5fcb4b6d3867207e3118" ;
+                    dct:hasVersion "git:190be21de9696bf3f38a63778c157b81cc3a33a5" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/generic/properties.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:69c0139130724beebb7d5fcb4b6d3867207e3118" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/catalog.ttl> ] ;
-            prov:wasAssociatedWith _:N6ee1a631826d46a1b2b0154147c13a45 ;
-            prov:wasInformedBy [ dct:identifier "92d2f8e7-ac71-4e4d-a0b1-26b2758d51bd" ] ] .
+                    dct:hasVersion "git:190be21de9696bf3f38a63778c157b81cc3a33a5" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/catalog.ttl> ],
+                [ a prov:Entity ;
+                    rdfs:seeAlso <https://datashapes.org/dash.ttl> ],
+                [ a prov:Entity ;
+                    rdfs:seeAlso <http://www.opengis.net/def/metamodel/profiles/skos_shared> ] ;
+            prov:wasAssociatedWith _:N79d9a2ae1cb9497a945b1a689bacda65 ;
+            prov:wasInformedBy [ dct:identifier "cff14481-6f1b-48de-9b56-208a1495e834" ] ] .
 
 <https://w3id.org/ad4gd/water-quality/properties/AOX-adsorbable-organic-halides> a skos:Concept,
         sosa:ObservableProperty ;
@@ -721,20 +721,20 @@ Single response question
     skos:prefLabel "AD4GD water quality observable properties" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-07-22T14:23:30.736215"^^xsd:dateTime ;
-    prov:startedAtTime "2025-07-22T14:23:30.663169"^^xsd:dateTime ;
+    prov:endedAtTime "2025-07-22T14:27:03.196155"^^xsd:dateTime ;
+    prov:startedAtTime "2025-07-22T14:27:03.117920"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:69c0139130724beebb7d5fcb4b6d3867207e3118" ;
+            dct:hasVersion "git:190be21de9696bf3f38a63778c157b81cc3a33a5" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/rainbow-data/generic/properties.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.5.dev3+g1871e64" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "ed69a8a8-511a-4c9c-a145-36c23983e65f" ] .
+    prov:wasInformedBy [ dct:identifier "a1dc2ee1-580f-4cb3-b559-01a2f213baea" ] .
 
-_:N6ee1a631826d46a1b2b0154147c13a45 a prov:Agent,
+_:N79d9a2ae1cb9497a945b1a689bacda65 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.dev3+g1871e64" ;

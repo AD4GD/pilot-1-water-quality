@@ -14,27 +14,27 @@
 
 <https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/generic/entailed/sensors.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    dct:hasVersion "git:69c0139130724beebb7d5fcb4b6d3867207e3118" ;
-    prov:wasAttributedTo _:N60496c916b9143709b803365b83187b2 ;
+    dct:hasVersion "git:190be21de9696bf3f38a63778c157b81cc3a33a5" ;
+    prov:wasAttributedTo _:N804829d95df6457e9b448589868e8b7d ;
     prov:wasGeneratedBy [ a prov:Activity ;
             rdfs:label "Entailment and validation" ;
             rdfs:comment "python ogc.na.update_vocabs -w ./rainbow-data rainbow-data/catalog.ttl --use-git-status --update --graph-store https://defs-hosted.opengis.net/fuseki-hosted/data" ;
-            prov:endedAtTime "2025-07-22T14:23:43.461477"^^xsd:dateTime ;
-            prov:startedAtTime "2025-07-22T14:23:43.344080"^^xsd:dateTime ;
+            prov:endedAtTime "2025-07-22T14:27:13.197024"^^xsd:dateTime ;
+            prov:startedAtTime "2025-07-22T14:27:13.076755"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     rdfs:seeAlso <https://datashapes.org/dash.ttl> ],
                 [ a prov:Entity ;
                     dct:format "text/turtle" ;
-                    dct:hasVersion "git:69c0139130724beebb7d5fcb4b6d3867207e3118" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/generic/sensors.ttl> ],
-                [ a prov:Entity ;
-                    dct:format "text/turtle" ;
-                    dct:hasVersion "git:69c0139130724beebb7d5fcb4b6d3867207e3118" ;
+                    dct:hasVersion "git:190be21de9696bf3f38a63778c157b81cc3a33a5" ;
                     rdfs:seeAlso <https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/catalog.ttl> ],
                 [ a prov:Entity ;
-                    rdfs:seeAlso <http://www.opengis.net/def/metamodel/profiles/skos_shared> ] ;
-            prov:wasAssociatedWith _:N60496c916b9143709b803365b83187b2 ;
-            prov:wasInformedBy [ dct:identifier "92d2f8e7-ac71-4e4d-a0b1-26b2758d51bd" ] ] .
+                    rdfs:seeAlso <http://www.opengis.net/def/metamodel/profiles/skos_shared> ],
+                [ a prov:Entity ;
+                    dct:format "text/turtle" ;
+                    dct:hasVersion "git:190be21de9696bf3f38a63778c157b81cc3a33a5" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/opengeospatial/NamingAuthority/master/generic/sensors.ttl> ] ;
+            prov:wasAssociatedWith _:N804829d95df6457e9b448589868e8b7d ;
+            prov:wasInformedBy [ dct:identifier "cff14481-6f1b-48de-9b56-208a1495e834" ] ] .
 
 <https://w3id.org/ad4gd/water-quality/sensors/AQUATOS-web-LTX> a owl:Class,
         skos:Concept ;
@@ -47,12 +47,12 @@ Data logger with storage space for 250,000 measurement data records, monitoring 
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "AQUATOS web LTX" ;
-    sosa:observes [ qudt:hasUnit unit:PER-PERCENT ;
+    sosa:observes [ qudt:hasUnit unit:MilliGM-PER-L ;
+            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
+        [ qudt:hasUnit unit:PER-PERCENT ;
             skos:broader ad4gd-prop:oxygen-saturation ],
         [ qudt:hasUnit unit:DEG_C ;
-            skos:broader ad4gd-prop:water-temperature ],
-        [ qudt:hasUnit unit:MilliGM-PER-L ;
-            skos:broader ad4gd-prop:dissolved-oxygen-concentration ] ;
+            skos:broader ad4gd-prop:water-temperature ] ;
     sdo:manufacturer manuf:terratransfer .
 
 <https://w3id.org/ad4gd/water-quality/sensors/RDO-BLUE> a owl:Class,
@@ -69,10 +69,10 @@ Use included Modbus/RS485 communication protocol to easily integrate with PLC sy
     skos:prefLabel "RDO BLUE" ;
     sosa:observes [ qudt:hasUnit unit:PER-PERCENT ;
             skos:broader ad4gd-prop:oxygen-saturation ],
-        [ qudt:hasUnit unit:MilliGM-PER-L ;
-            skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
         [ qudt:hasUnit unit:DEG_C ;
-            skos:broader ad4gd-prop:water-temperature ] ;
+            skos:broader ad4gd-prop:water-temperature ],
+        [ qudt:hasUnit unit:MilliGM-PER-L ;
+            skos:broader ad4gd-prop:dissolved-oxygen-concentration ] ;
     sdo:manufacturer manuf:in-situ .
 
 <https://w3id.org/ad4gd/water-quality/sensors/RDO-PRO-X> a owl:Class,
@@ -87,12 +87,12 @@ With the RDO PRO-X, NPDES permit holders can monitor influent, effluent and trea
     rdfs:subClassOf sosa:Sensor ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/sensors> ;
     skos:prefLabel "In-Situ RDO PRO-X" ;
-    sosa:observes [ qudt:hasUnit unit:PER-PERCENT ;
-            skos:broader ad4gd-prop:oxygen-saturation ],
+    sosa:observes [ qudt:hasUnit unit:DEG_C ;
+            skos:broader ad4gd-prop:water-temperature ],
         [ qudt:hasUnit unit:MilliGM-PER-L ;
             skos:broader ad4gd-prop:dissolved-oxygen-concentration ],
-        [ qudt:hasUnit unit:DEG_C ;
-            skos:broader ad4gd-prop:water-temperature ] ;
+        [ qudt:hasUnit unit:PER-PERCENT ;
+            skos:broader ad4gd-prop:oxygen-saturation ] ;
     sdo:manufacturer manuf:in-situ .
 
 <https://w3id.org/ad4gd/water-quality/sensors> a skos:ConceptScheme ;
@@ -100,20 +100,20 @@ With the RDO PRO-X, NPDES permit holders can monitor influent, effluent and trea
     skos:prefLabel "AD4GD water quality sensors" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-07-22T14:23:30.817082"^^xsd:dateTime ;
-    prov:startedAtTime "2025-07-22T14:23:30.758676"^^xsd:dateTime ;
+    prov:endedAtTime "2025-07-22T14:27:03.052898"^^xsd:dateTime ;
+    prov:startedAtTime "2025-07-22T14:27:02.951496"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:69c0139130724beebb7d5fcb4b6d3867207e3118" ;
+            dct:hasVersion "git:190be21de9696bf3f38a63778c157b81cc3a33a5" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/rainbow-data/generic/sensors.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 sdo:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.5.dev3+g1871e64" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "ed69a8a8-511a-4c9c-a145-36c23983e65f" ] .
+    prov:wasInformedBy [ dct:identifier "a1dc2ee1-580f-4cb3-b559-01a2f213baea" ] .
 
-_:N60496c916b9143709b803365b83187b2 a prov:Agent,
+_:N804829d95df6457e9b448589868e8b7d a prov:Agent,
         sdo:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.dev3+g1871e64" ;
