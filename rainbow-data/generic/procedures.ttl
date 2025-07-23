@@ -8,11 +8,20 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://w3id.org/ad4gd/water-quality/procedures/chlorine-measurement> a skos:Concept,
+        sosa:Procedure ;
+    dct:source [ skos:prefLabel "AD4GD" ;
+            foaf:homepage <https://ad4gd.eu/> ] ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
+    skos:narrower <https://w3id.org/ad4gd/water-quality/procedures/Tetra_Test_Cl2> ;
+    skos:prefLabel "Measuring the chlorine  concentration in a liquid sample" .
+
 <https://w3id.org/ad4gd/water-quality/procedures/Easy_Life_PO4> a skos:Concept,
         sosa:Procedure ;
     dct:source [ skos:prefLabel "Easy Life International B.V." ;
             foaf:homepage <https://www.easylife.eu/> ] ;
     rdfs:seeAlso <https://www.easylife.eu/products/freshwater/water-tests/phosphate> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/orthophosphate-measurement> ;
     skos:definition "A simple Ortho-phosphate measurement based on colour reactions. No further equipment needed. The semi-quantitative result is a classification of ortho-phosphate concentration in one of 9 classes (values in mg/L): \"0\", \"0.02\", \"0.05\", \"0.1\", \"0.2\", \"0.5\", \"1\", \"1.5\", \"2\"" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "Easy Life PO4 Phosphate Test Kit Water Quality Tests" .
@@ -23,6 +32,7 @@
             foaf:homepage <https://ad4gd.eu/> ] ;
     rdfs:seeAlso <https://www.iso.org/standard/36917.html> ;
     owl:sameAs <https://dx.doi.org/10.31030/9552789> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/orthophosphate-measurement> ;
     skos:definition "ISO 6878:2004 specifies methods for the determination of orthophosphate, orthophosphate after solvent extraction, hydrolysable phosphate plus orthophosphate, and total phosphorus after decomposition.The methods are applicable to all kinds of water including seawater and effluents. Phosphorus concentrations within the range of 0,005 mg/l to 0,8 mg/l may be determined in such samples without dilution. A solvent extraction procedure allows smaller phosphorus concentrations to be determined with a detection limit of about 0,000 5 mg/l." ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "International standard ISO 6878:2004, Published (Edition 2, 2004)" .
@@ -32,6 +42,7 @@
     dct:source [ skos:prefLabel "JBL GmbH & Co. KG" ;
             foaf:homepage <https://www.jbl.de/en> ] ;
     rdfs:seeAlso <https://www.jbl.de/?mod=products&func=detail&country=gb&lang=en&id=8667> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/ammonium-measurement> ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "JBL Pro Aquatest NH4 Water Analysis" .
 
@@ -40,6 +51,7 @@
     dct:source [ skos:prefLabel "JBL GmbH & Co. KG" ;
             foaf:homepage <https://www.jbl.de/en> ] ;
     rdfs:seeAlso <https://www.jbl.de/?mod=products&func=detail&id=8670&country=gb&lang=en#2412317> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/nitrite-measurement> ;
     skos:definition "A simple Nitrite measurement based on color reaction. No further equipment needed. The semi-quantitative result is a classification of Nitrite concentration in one the 9 classes (values in mg/L): \"<0,01\", \"0,025\", \"0,05\", \"0,1\", \"0,2\", \"0,4\", \"0,6\", \"0,8\", \"1,0\"" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "JBL Pro Aquatest NO2 Water Analysis" .
@@ -49,6 +61,7 @@
     dct:source [ skos:prefLabel "JBL GmbH & Co. KG" ;
             foaf:homepage <https://www.jbl.de/en> ] ;
     rdfs:seeAlso <https://www.jbl.de/?mod=products&func=detail&id=8673&country=gb&lang=en#2412517> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/nitrate-measurement> ;
     skos:definition "A simple Nitrate measurement based on color reaction. No further equipment needed. The semi-quantitative result is a classification of Nitrate concentration in one the 9 classes (values in mg/L): \"<0,5\", \"1\", \"3\", \"5\", \"15\", \"30\", \"60\", \"120\", \"200\"" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "JBL Pro Aquatest NO3 Water Analysis" .
@@ -58,6 +71,7 @@
     dct:source [ skos:prefLabel "Tetra GmbH" ;
             foaf:homepage <https://www.tetra.net/en-gb> ] ;
     rdfs:seeAlso <https://www.tetra.net/de-de/produkte/tetra-test-6in1> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/total_hardness-measurement> ;
     skos:definition "A fast and easy testing of water quality based on colour reaction on the test strip. No further equipment needed. The semi-quantitative result is a classification of total hardness in one the 4 classes (values in °d): \"0\", \"4\", \"8\", \"10\"" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "Tetra Test 6 in 1 Test strips" .
@@ -67,6 +81,7 @@
     dct:source [ skos:prefLabel "Tetra GmbH" ;
             foaf:homepage <https://www.tetra.net/en-gb> ] ;
     rdfs:seeAlso <https://www.tetra.net/de-de/produkte/tetra-test-6in1> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/carbonate_hardness-measurement> ;
     skos:definition "A fast and easy testing of water quality based on colour reaction on the test strip. No further equipment needed. The semi-quantitative result is a classification of carbonate hardness in one the 6 classes (values in °d): \"0\", \"3\", \"6\", \"10\", \"15\", \"20\"" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "Tetra Test 6 in 1 Test strips" .
@@ -76,6 +91,7 @@
     dct:source [ skos:prefLabel "Tetra GmbH" ;
             foaf:homepage <https://www.tetra.net/en-gb> ] ;
     rdfs:seeAlso <https://www.tetra.net/de-de/produkte/tetra-test-6in1> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/nitrite-measurement> ;
     skos:definition "A fast and easy testing of water quality based on colour reaction on the test strip. No further equipment needed. The semi-quantitative result is a classification of Nitrite concentration in one the 4 classes (values in mg/l): \"0\", \"1\", \"5\", \"10\"" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "Tetra Test 6 in 1 Test strips" .
@@ -85,6 +101,7 @@
     dct:source [ skos:prefLabel "Tetra GmbH" ;
             foaf:homepage <https://www.tetra.net/en-gb> ] ;
     rdfs:seeAlso <https://www.tetra.net/de-de/produkte/tetra-test-6in1> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/nitrate-measurement> ;
     skos:definition "A fast and easy testing of water quality based on colour reaction on the test strip. No further equipment needed. The semi-quantitative result is a classification of Nitrate concentration in one the 6 classes (values in mg/l): \"0\", \"10\", \"25\", \"50\", \"100\", \"250\"" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "Tetra Test 6 in 1 Test strips" .
@@ -94,6 +111,7 @@
     dct:source [ skos:prefLabel "Tetra GmbH" ;
             foaf:homepage <https://www.tetra.net/en-gb> ] ;
     rdfs:seeAlso <https://www.tetra.net/de-de/produkte/tetra-test-6in1> ;
+    skos:broader <https://w3id.org/ad4gd/water-quality/procedures/pH-measurement> ;
     skos:definition "A fast and easy testing of water quality based on colour reaction on the test strip. No further equipment needed. The semi-quantitative result is a classification of pH in one the 6 classes : \"6.4\", \"6.8\", \"7.2\", \"7.6\", \"8.0\", \"8.4\"" ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
     skos:prefLabel "Tetra Test 6 in 1 Test strips" .
@@ -103,6 +121,7 @@
     dct:source [ skos:prefLabel "AD4GD" ;
             foaf:homepage <https://ad4gd.eu/> ] ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
+    skos:narrower <https://w3id.org/ad4gd/water-quality/procedures/JBL_NH4> ;
     skos:prefLabel "Analysis of ammonium concentration in a liquid sample" .
 
 <https://w3id.org/ad4gd/water-quality/procedures/carbonate_hardness-measurement> a skos:Concept,
@@ -110,41 +129,15 @@
     dct:source [ skos:prefLabel "AD4GD" ;
             foaf:homepage <https://ad4gd.eu/> ] ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
+    skos:narrower <https://w3id.org/ad4gd/water-quality/procedures/Tetra_Test_KH> ;
     skos:prefLabel "Measuring the carbonate hardness of water" .
-
-<https://w3id.org/ad4gd/water-quality/procedures/chlorine-measurement> a skos:Concept,
-        sosa:Procedure ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
-    skos:prefLabel "Measuring the chlorine  concentration in a liquid sample" .
-
-<https://w3id.org/ad4gd/water-quality/procedures/nitrate-measurement> a skos:Concept,
-        sosa:Procedure ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
-    skos:prefLabel "Analysis of nitrate concentration in a liquid sample" .
-
-<https://w3id.org/ad4gd/water-quality/procedures/nitrite-measurement> a skos:Concept,
-        sosa:Procedure ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
-    skos:prefLabel "Analysis of nitrite concentration in a liquid sample" .
-
-<https://w3id.org/ad4gd/water-quality/procedures/orthophosphate-measurement> a skos:Concept,
-        sosa:Procedure ;
-    dct:source [ skos:prefLabel "AD4GD" ;
-            foaf:homepage <https://ad4gd.eu/> ] ;
-    skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
-    skos:prefLabel "Analysis of orthophosphat concentration in a liquid sample" .
 
 <https://w3id.org/ad4gd/water-quality/procedures/pH-measurement> a skos:Concept,
         sosa:Procedure ;
     dct:source [ skos:prefLabel "AD4GD" ;
             foaf:homepage <https://ad4gd.eu/> ] ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
+    skos:narrower <https://w3id.org/ad4gd/water-quality/procedures/Tetra_Test_pH> ;
     skos:prefLabel "Measuring the ph of a liquid sample" .
 
 <https://w3id.org/ad4gd/water-quality/procedures/total_hardness-measurement> a skos:Concept,
@@ -152,23 +145,51 @@
     dct:source [ skos:prefLabel "AD4GD" ;
             foaf:homepage <https://ad4gd.eu/> ] ;
     skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
+    skos:narrower <https://w3id.org/ad4gd/water-quality/procedures/Tetra_Test_GH> ;
     skos:prefLabel "Measuring the total hardness of water" .
+
+<https://w3id.org/ad4gd/water-quality/procedures/nitrate-measurement> a skos:Concept,
+        sosa:Procedure ;
+    dct:source [ skos:prefLabel "AD4GD" ;
+            foaf:homepage <https://ad4gd.eu/> ] ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
+    skos:narrower <https://w3id.org/ad4gd/water-quality/procedures/JBL_NO3>,
+        <https://w3id.org/ad4gd/water-quality/procedures/Tetra_Test_NO3> ;
+    skos:prefLabel "Analysis of nitrate concentration in a liquid sample" .
+
+<https://w3id.org/ad4gd/water-quality/procedures/nitrite-measurement> a skos:Concept,
+        sosa:Procedure ;
+    dct:source [ skos:prefLabel "AD4GD" ;
+            foaf:homepage <https://ad4gd.eu/> ] ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
+    skos:narrower <https://w3id.org/ad4gd/water-quality/procedures/JBL_NO2>,
+        <https://w3id.org/ad4gd/water-quality/procedures/Tetra_Test_NO2> ;
+    skos:prefLabel "Analysis of nitrite concentration in a liquid sample" .
+
+<https://w3id.org/ad4gd/water-quality/procedures/orthophosphate-measurement> a skos:Concept,
+        sosa:Procedure ;
+    dct:source [ skos:prefLabel "AD4GD" ;
+            foaf:homepage <https://ad4gd.eu/> ] ;
+    skos:inScheme <https://w3id.org/ad4gd/water-quality/procedures> ;
+    skos:narrower <https://w3id.org/ad4gd/water-quality/procedures/Easy_Life_PO4>,
+        <https://w3id.org/ad4gd/water-quality/procedures/ISO_6878-2004> ;
+    skos:prefLabel "Analysis of orthophosphat concentration in a liquid sample" .
 
 <https://w3id.org/ad4gd/water-quality/procedures> a skos:ConceptScheme ;
     dct:source <https://ad4gd.eu/> ;
     skos:prefLabel "AD4GD water quality observation procedures" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-07-22T14:56:20.330862"^^xsd:dateTime ;
-    prov:startedAtTime "2025-07-22T14:56:20.234547"^^xsd:dateTime ;
+    prov:endedAtTime "2025-07-23T09:42:50.544060"^^xsd:dateTime ;
+    prov:startedAtTime "2025-07-23T09:42:50.442755"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:dab965c4f9dbbb1b2a06f2031bc16847f9f6c3e8" ;
+            dct:hasVersion "git:d07750e6983a66518d4bb5fd31090cdd5210e7a8" ;
             rdfs:seeAlso <file:///home/runner/work/pilot-1-water-quality/pilot-1-water-quality/rainbow-data/generic/procedures.yml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.5.dev3+g1871e64" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "d8c1fc58-354b-4a55-8382-49e9283b44c5" ] .
+    prov:wasInformedBy [ dct:identifier "22e78aa4-3930-44b3-9fbd-6e04fc3fc7cd" ] .
 
